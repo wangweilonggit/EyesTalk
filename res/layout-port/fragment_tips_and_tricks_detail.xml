@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_skin_fragment_bg"
+    android:fillViewport="true"
+    android:overScrollMode="never" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent" >
+
+        <LinearLayout
+            android:id="@+id/tips_and_tricks_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_large"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_pre_big" >
+
+            <TextView
+                android:id="@+id/textview_tips_and_tricks_title_in_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_color_1"
+                android:textSize="@dimen/text_size_big_1" />
+
+            <com.markswoman.eyestalk.model.uiobject.DynamicImageView
+                android:id="@+id/imageview_tips_and_tricks_detail_1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/content_description"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/textview_tips_and_tricks_detail_content_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_pre_normal"
+                android:singleLine="false"
+                android:text="@string/tips_and_tricks_item_detail_1"
+                android:textColor="@color/gray_color_1"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

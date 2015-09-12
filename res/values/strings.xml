@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EyesTalk</string>
+    <string name="content_description">Content Description</string>
+    <string name="follow_us">Follow Us</string>
+
+    <!-- REST HOST -->
+    <string name="rest_host">http://eyestalk.rawdigitalagency.com</string>
+
+    <!-- Notifications -->
+    <string name="gcm_register_failed">The app is unable to receive notifications on this device</string>
+    <string name="connection_error">Error occurred while fetching data from the server</string>
+    <string name="assets_fetch_error">Sorry, the app is unable to update assets now</string>
+    <string name="no_update">There is no update</string>
+
+    <!-- Button Labels -->
+    <string name="asia">ASIA</string>
+    <string name="melayu">MELAYU</string>
+    <string name="western">WESTERN</string>
+    <string name="check_item">CHECK ITEM ></string>
+    <string name="compare_item">COMPARE ITEM ></string>
+    <string name="click_to_choose">CLICK HERE\nTO CHOOSE LENS</string>
+
+    <!-- Text Labels -->
+    <string name="pinch_to_zoom_in">Pinch Image to Zoom In</string>
+
+    <!-- custom strings - test data -->
+    <string name="skin_select_instruction">Pilihlah kategori warna kulit mu.</string>
+    <string name="tips_and_tricks_item_comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis urna nisi, 
+        \n ullamcorper sed orci ut, dictum suscipit erat. Proin quis pellentesque nisl. Donec 
+        \n vel consequat odio. Praesent ullamcorper augue porttitor fringilla ornare. Proin a
+        \n tortor et libero condimentum ultrices. Curabitur accumsan tortor blandit ligula
+        \n auctor, eget tempor velit vestibulum. Proin quis pellentesque nisl. Donec vel
+        \n consequat odio. Praesent ullamcorper aug</string>
+    <string name="tips_and_tricks_item_detail_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Duis urna nisi, ullamcorper sed orci ut, dictum suscipit erat. Proin quis pellentesque nisl. 
+        Donec vel consequat odio. Praesent ullamcorper augue porttitor fringilla ornare. 
+        Proin a tortor et libero condimentum ultrices. Curabitur accumsan tortor blandit ligula auctor, 
+        eget tempor velit vestibulum. Proin quis pellentesque nisl. Donec vel consequat odio. 
+        Praesent ullamcorper aug suscipit erat. Proin quis pellentesque nisl. Donec vel consequat odio. 
+        Praesent ullamcorper augue porttitor fringilla ornare. Proin a tortor et libero condimentum ultrices. 
+        Curabitur accumsan tortor blandit ligula auctor, eget tempor velit vestibulum. 
+        Proin quis pellentesque nisl. Donec vel consequat odio. Praesent ullamcorper aug</string>
+    <string name="tips_and_tricks_item_detail_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Duis urna nisi, ullamcorper sed orci ut, dictum suscipit erat. Proin quis pellentesque nisl. 
+        Donec vel consequat odio. Praesent ullamcorper augue porttitor fringilla ornare. Proin a tortor 
+        et libero condimentum ultrices. Curabitur accumsan tortor blandit ligula auctor, eget tempor 
+        velit vestibulum.</string>
+    <string name="collection_detail_comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Duis urna nisi, ullamcorper sed orci ut, dictum suscipit erat. Proin quis pellentesque nisl. 
+        Donec vel consequat odio. Praesent ullamcorper augue porttitor fringilla ornare. 
+        Proin a tortor et libero condimentum ultrices. Curabitur accumsan tortor blandit ligula auctor, 
+        eget tempor velit vestibulum.</string>
+    <string name="collection_detail_1_title">Details 1: </string>
+    <string name="collection_detail_1_content">Donec vel consequat odio. Praesent ullamcorper augue 
+        porttitor fringilla ornare.
+
+		Proin a tortor et libero condimentum ultrices. Curabitur accumsan tortor blandit ligula auctor, 
+		eget tempor velit vestibulum.</string>
+
+</resources>

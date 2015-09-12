@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/side_menu_bg" >
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:divider="@color/side_menu_divider"
+        android:dividerHeight="1dp"
+        android:entries="@array/side_menu_items" />
+
+    <View
+        style="@style/sidemenu_divider_style"
+        android:layout_below="@+id/list" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_ext_large_1"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/follow_us"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/button_facebook_in_sidemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/facebook_button" />
+
+            <ImageButton
+                android:id="@+id/button_insta_in_sidemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:background="@color/transparent"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/insta_button" />
+
+            <ImageButton
+                android:id="@+id/button_twitter_in_sidemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:background="@color/transparent"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/twitter_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

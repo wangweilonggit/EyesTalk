@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_skin_fragment_bg"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/layout_left_panel_active"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+
+            <com.markswoman.eyestalk.model.uiobject.TouchImageView
+                android:id="@+id/imageview_left_character_in_compare_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/character_melayu" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/character_bottom_overlay"
+                android:contentDescription="@string/content_description" />
+
+            <RelativeLayout
+                android:id="@+id/layout_bottom_container_on_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_small_2" >
+
+                <com.markswoman.eyestalk.model.uiobject.PinkButton
+                    android:id="@+id/button_check_item_on_left_character"
+                    style="@style/Pink_Small_Button"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:paddingRight="@dimen/padding_normal"
+                    android:text="@string/check_item"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button_check_item_on_left_character"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="@string/pinch_to_zoom_in"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_left_panel_deactive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/compare_blank_bg"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/character_blank" />
+
+            <com.markswoman.eyestalk.model.uiobject.PinkButton
+                android:id="@+id/button_choose_lens_item_on_left_character"
+                style="@style/Pink_Normal_Button"
+                android:layout_centerInParent="true"
+                android:text="@string/click_to_choose"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/layout_right_panel_active"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <com.markswoman.eyestalk.model.uiobject.TouchImageView
+                android:id="@+id/imageview_right_character_in_compare_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/character_melayu" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/character_bottom_overlay"
+                android:contentDescription="@string/content_description" />
+
+            <RelativeLayout
+                android:id="@+id/layout_bottom_container_on_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_small_2" >
+
+                <com.markswoman.eyestalk.model.uiobject.PinkButton
+                    android:id="@+id/button_check_item_on_right_character"
+                    style="@style/Pink_Small_Button"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:paddingRight="@dimen/padding_normal"
+                    android:text="@string/check_item"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button_check_item_on_right_character"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="@string/pinch_to_zoom_in"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_right_panel_deactive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/compare_blank_bg"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/character_blank" />
+
+            <com.markswoman.eyestalk.model.uiobject.PinkButton
+                android:id="@+id/button_choose_lens_item_on_right_character"
+                style="@style/Pink_Normal_Button"
+                android:layout_centerInParent="true"
+                android:text="@string/click_to_choose"
+                android:textSize="@dimen/text_size_normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

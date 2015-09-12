@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/content_description"
+        android:scaleType="fitXY"
+        android:src="@drawable/select_skin_fragment_bg" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_tab_bar_in_our_collection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/choose_lens_tab_bar_height_port"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pink_color_2"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/button_ice_in_our_collection_fragment"
+            style="@style/choose_lens_tab_button_portrait"
+            android:background="@color/green_color_1"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/icon_ice" />
+
+        <ImageButton
+            android:id="@+id/button_xtwo_in_our_collection_fragment"
+            style="@style/choose_lens_tab_button_portrait"
+            android:background="@color/pink_color_2"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/icon_xtwo" />
+
+        <ImageButton
+            android:id="@+id/button_aplus_in_our_collection_fragment"
+            style="@style/choose_lens_tab_button_portrait"
+            android:background="@color/yellow_color_1"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/icon_aplus" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearlayout_tab_bar_in_our_collection"
+        android:background="@drawable/select_skin_fragment_bg"
+        android:fillViewport="true"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:padding="@dimen/padding_medium" >
+
+            <GridView
+                android:id="@+id/gridview_our_collections_in_our_collection"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/our_collection_list_height"
+                android:background="@color/transparent"
+                android:horizontalSpacing="@dimen/our_collection_list_horizontal_spacing"
+                android:numColumns="2"
+                android:verticalSpacing="@dimen/our_collection_list_vertical_spacing"
+                tools:ignore="NestedScrolling" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

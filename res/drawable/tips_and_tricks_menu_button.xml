@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed -->
+    <item android:drawable="@drawable/menu_tips_and_tricks_hover" android:state_pressed="true"/>
+    <!-- focused -->
+    <item android:drawable="@drawable/menu_tips_and_tricks" android:state_focused="true"/>
+    <!-- default -->
+    <item android:drawable="@drawable/menu_tips_and_tricks"/>
+
+</selector>

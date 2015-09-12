@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink_color_1" >
+
+    <TextView
+        android:id="@+id/imageview_skin_select_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pink_color_1"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_big_3"
+        android:paddingRight="@dimen/padding_big_3"
+        android:text="@string/skin_select_instruction"
+        android:textColor="@color/black_color_3"
+        android:textSize="@dimen/text_size_big_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/imageview_skin_select_bottom_bar"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_skin_fragment_bg"
+            android:paddingRight="@dimen/padding_normal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/imageview_melayu_character"
+                android:padding="@dimen/padding_pre_normal" >
+
+                <com.markswoman.eyestalk.model.uiobject.PinkButton
+                    android:id="@+id/button_melayu_in_skin_select"
+                    style="@style/Pink_Small_Button"
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:text="@string/melayu"
+                    android:textSize="@dimen/text_size_pre_normal" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageview_melayu_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/melayu" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_skin_fragment_bg"
+            android:paddingRight="@dimen/padding_normal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/imageview_western_character"
+                android:padding="@dimen/padding_pre_normal" >
+
+                <com.markswoman.eyestalk.model.uiobject.PinkButton
+                    android:id="@+id/button_western_in_skin_select"
+                    style="@style/Pink_Small_Button"
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:text="@string/western"
+                    android:textSize="@dimen/text_size_pre_normal" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageview_western_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/western" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_skin_fragment_bg"
+            android:paddingRight="@dimen/padding_normal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/imageview_asia_character"
+                android:padding="@dimen/padding_pre_normal" >
+
+                <com.markswoman.eyestalk.model.uiobject.PinkButton
+                    android:id="@+id/button_asia_in_skin_select"
+                    style="@style/Pink_Small_Button"
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:text="@string/asia"
+                    android:textSize="@dimen/text_size_pre_normal" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageview_asia_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/asia" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_skin_fragment_bg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_tab_bar_in_choose_lens"
+        android:layout_width="@dimen/choose_lens_tab_bar_width"
+        android:layout_height="match_parent"
+        android:background="@color/pink_color_2"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/button_ice_in_choose_lens"
+            style="@style/choose_lens_tab_button_landscape"
+            android:background="@drawable/button_ice_bg"
+            android:contentDescription="@string/content_description" />
+
+        <ImageButton
+            android:id="@+id/button_xtwo_in_choose_lens"
+            style="@style/choose_lens_tab_button_landscape"
+            android:background="@drawable/button_xtwo_bg"
+            android:contentDescription="@string/content_description" />
+
+        <ImageButton
+            android:id="@+id/button_aplus_in_choose_lens"
+            style="@style/choose_lens_tab_button_landscape"
+            android:background="@drawable/button_aplus_bg"
+            android:contentDescription="@string/content_description" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_first_subcategory"
+        android:layout_width="@dimen/subcategory_first_list_width"
+        android:layout_height="match_parent"
+        android:background="@color/choose_lens_sub_bar_first_bg"
+        android:divider="@color/weak_white_divider"
+        android:dividerHeight="1dp"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/padding_pre_normal"
+        android:paddingRight="@dimen/padding_pre_normal"
+        android:scrollbars="none" />
+
+    <ListView
+        android:id="@+id/listview_second_subcategory"
+        android:layout_width="@dimen/subcategory_second_list_width"
+        android:layout_height="match_parent"
+        android:background="@color/choose_lens_sub_bar_second_bg"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.markswoman.eyestalk.model.uiobject.TouchImageView
+            android:id="@+id/character_in_choose_lens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/character_bottom_overlay"
+                android:contentDescription="@string/content_description" />
+
+            <LinearLayout
+                android:id="@+id/layout_button_container_in_choose_lens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <com.markswoman.eyestalk.model.uiobject.PinkButton
+                    android:id="@+id/button_check_item_in_choose_lens"
+                    style="@style/Pink_Small_Button"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:text="@string/check_item" />
+
+                <com.markswoman.eyestalk.model.uiobject.PinkButton
+                    android:id="@+id/button_compare_item_in_choose_lens"
+                    style="@style/Pink_Small_Button"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:text="@string/compare_item" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_button_container_in_choose_lens"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:text="@string/pinch_to_zoom_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

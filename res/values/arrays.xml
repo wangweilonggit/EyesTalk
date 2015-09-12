@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- resources for side menu -->
+    <string-array name="side_menu_items">
+        <item>HOME</item>
+        <item>PRODUCT MATCHING</item>
+        <item>LENS COMPARISON</item>
+        <item>OUR COLLECTIONS</item>
+        <item>TIPS AND TRICKS</item>
+    </string-array>
+
+</resources>

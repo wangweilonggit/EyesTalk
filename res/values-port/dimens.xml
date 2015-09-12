@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Sliding Menu Offset -->
+    <dimen name="slidingmenu_offset">80dp</dimen>
+
+    <!-- Actionbar Size -->
+    <dimen name="actionbar_height">62dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_mini">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_small_2">8dp</dimen>
+    <dimen name="margin_pre_normal">12dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_pre_medium">20dp</dimen>
+    <dimen name="margin_medium">24dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_ext_large_1">48dp</dimen>
+    <dimen name="margin_ext_large_2">64dp</dimen>
+
+    <!-- Paddings -->
+    <dimen name="padding_mini">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_pre_normal">12dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_pre_medium">20dp</dimen>
+    <dimen name="padding_medium">24dp</dimen>
+    <dimen name="padding_pre_big">28dp</dimen>
+    <dimen name="padding_big">32dp</dimen>
+    <dimen name="padding_big_1">36dp</dimen>
+    <dimen name="padding_big_2">40dp</dimen>
+    <dimen name="padding_big_3">52dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_pre_big">24sp</dimen>
+    <dimen name="text_size_big_1">26sp</dimen>
+    <dimen name="text_size_big_2">28sp</dimen>
+    <dimen name="text_size_big_3">30sp</dimen>
+    <dimen name="text_size_big_4">32sp</dimen>
+    <dimen name="text_size_big_5">34sp</dimen>
+    <dimen name="text_size_big_6">36sp</dimen>
+    <dimen name="text_size_big_7">38sp</dimen>
+    <dimen name="text_size_big_8">40sp</dimen>
+
+    <!-- Elements Sizes -->
+    <dimen name="tips_and_tricks_item_thumbnail_width">182dp</dimen>
+    <dimen name="tips_and_tricks_item_thumbnail_height">129dp</dimen>
+    <dimen name="tips_and_tricks_item_image_width">246dp</dimen>
+    <dimen name="tips_and_tricks_item_image_height">168dp</dimen>
+    <dimen name="our_collection_tab_bar_height">116dp</dimen>
+    <dimen name="our_collection_list_horizontal_spacing">10dp</dimen>
+    <dimen name="our_collection_list_vertical_spacing">10dp</dimen>
+    <dimen name="our_collection_list_height">640dp</dimen>
+    <dimen name="our_collection_detail_image_width">400dp</dimen>
+    <dimen name="our_collection_detail_image_height">360dp</dimen>
+    <dimen name="our_collection_listitem_height">160dp</dimen>
+    <dimen name="our_collection_listitem_image_width">120dp</dimen>
+    <dimen name="our_collection_listitem_image_height">110dp</dimen>
+    <dimen name="choose_lens_tab_bar_width_land">116dp</dimen>
+    <dimen name="choose_lens_tab_bar_height_port">48dp</dimen>
+    <dimen name="subcategory_first_list_width">133dp</dimen>
+    <dimen name="subcategory_first_list_height_port">60dp</dimen>
+    <dimen name="subcategory_second_list_width">149dp</dimen>
+    <dimen name="subcategory_second_list_width_port">80dp</dimen>
+    <dimen name="subcategory_first_listitem_width_port_mode">82dp</dimen>
+    <dimen name="subcategory_second_listitem_width_port_mode">82dp</dimen>
+    <dimen name="progress_dialog_width">120dp</dimen>
+    <dimen name="progress_dialog_height">120dp</dimen>
+    <dimen name="product_detail_image_size">64dp</dimen>
+
+</resources>

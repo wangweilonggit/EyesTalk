@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- System Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#808080</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#00FF00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="editimage">#FFFF00</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_gray">#FFCCCCCC</color>
+    <color name="darker_gray">#80aaaaaa</color>
+
+    <!-- Custom Colors -->
+    <color name="pink_color_1">#f5aec7</color>
+    <color name="pink_color_2">#ff008a</color>
+    <color name="black_color_1">#291d22</color>
+    <color name="black_color_2">#241f29</color>
+    <color name="black_color_3">#1c1d28</color>
+    <color name="gray_color_1">#615d68</color>
+    <color name="green_color_1">#00bbe2</color>
+    <color name="yellow_color_1">#ffca00</color>
+
+    <!-- Background Colors -->
+    <color name="menu_fragment_bg">#ff221c20</color>
+    <color name="actionbar_bg">#ff1e1f2b</color>
+    <color name="side_menu_bg">#ff43353a</color>
+
+    <!-- Divider Colors -->
+    <color name="side_menu_divider">#34ffffff</color>
+    <color name="our_collection_cell_divider">#a1a1a1</color>
+    <color name="weak_white_divider">#20ffffff</color>
+
+    <!-- Element Colors -->
+    <color name="compare_blank_bg">#f7eaec</color>
+    <color name="choose_lens_sub_bar_first_bg">#3f2b32</color>
+    <color name="choose_lens_sub_bar_second_bg">#30292b</color>
+
+</resources>

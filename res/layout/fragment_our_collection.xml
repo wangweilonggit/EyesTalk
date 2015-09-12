@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_tab_bar_in_our_collection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/our_collection_tab_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/pink_color_2"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/button_ice_in_our_collection_fragment"
+            style="@style/our_collection_tab_button"
+            android:background="@drawable/button_ice_bg_land"
+            android:contentDescription="@string/content_description" />
+
+        <ImageButton
+            android:id="@+id/button_xtwo_in_our_collection_fragment"
+            style="@style/our_collection_tab_button"
+            android:background="@drawable/button_xtwo_bg_land"
+            android:contentDescription="@string/content_description" />
+
+        <ImageButton
+            android:id="@+id/button_aplus_in_our_collection_fragment"
+            style="@style/our_collection_tab_button"
+            android:background="@drawable/button_aplus_bg_land"
+            android:contentDescription="@string/content_description" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearlayout_tab_bar_in_our_collection"
+        android:background="@drawable/select_skin_fragment_bg"
+        android:fillViewport="true"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/layout_grid_container_in_our_collection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_ext_large_2"
+                tools:ignore="UselessParent" >
+
+                <GridView
+                    android:id="@+id/gridview_our_collections_in_our_collection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:horizontalSpacing="@dimen/our_collection_list_horizontal_spacing"
+                    android:numColumns="3"
+                    android:verticalSpacing="@dimen/our_collection_list_vertical_spacing"
+                    tools:ignore="NestedScrolling" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

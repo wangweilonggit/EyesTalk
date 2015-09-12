@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_skin_fragment_bg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_tab_bar_in_choose_lens"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/choose_lens_tab_bar_height_port"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pink_color_2"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/button_ice_in_choose_lens"
+            style="@style/choose_lens_tab_button_portrait"
+            android:background="@color/green_color_1"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/icon_ice" />
+
+        <ImageButton
+            android:id="@+id/button_xtwo_in_choose_lens"
+            style="@style/choose_lens_tab_button_portrait"
+            android:background="@color/pink_color_2"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/icon_xtwo" />
+
+        <ImageButton
+            android:id="@+id/button_aplus_in_choose_lens"
+            style="@style/choose_lens_tab_button_portrait"
+            android:background="@color/yellow_color_1"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/icon_aplus" />
+    </LinearLayout>
+
+    <com.devsmart.android.ui.HorizontalListView
+        android:id="@+id/listview_first_subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subcategory_first_list_height_port"
+        android:layout_above="@+id/linearlayout_tab_bar_in_choose_lens"
+        android:background="@color/choose_lens_sub_bar_first_bg" />
+
+    <com.devsmart.android.ui.HorizontalListView
+        android:id="@+id/listview_second_subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subcategory_second_list_width_port"
+        android:layout_above="@+id/listview_first_subcategory"
+        android:background="@color/choose_lens_sub_bar_second_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/listview_second_subcategory" >
+
+        <com.markswoman.eyestalk.model.uiobject.TouchImageView
+            android:id="@+id/character_in_choose_lens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/character_bottom_overlay"
+            android:contentDescription="@string/content_description" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_small_2" >
+
+            <LinearLayout
+                android:id="@+id/layout_button_container_in_choose_lens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_pre_medium"
+                android:paddingRight="@dimen/padding_pre_medium" >
+
+                <com.markswoman.eyestalk.model.uiobject.PinkButton
+                    android:id="@+id/button_check_item_in_choose_lens"
+                    style="@style/Pink_Small_Button"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:text="@string/check_item"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <com.markswoman.eyestalk.model.uiobject.PinkButton
+                    android:id="@+id/button_compare_item_in_choose_lens"
+                    style="@style/Pink_Small_Button"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:text="@string/compare_item"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_button_container_in_choose_lens"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:gravity="center_vertical"
+                android:text="@string/pinch_to_zoom_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
